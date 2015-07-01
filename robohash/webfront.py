@@ -377,8 +377,8 @@ def main():
                 "static/")}),
                 (r"/static/(.*)", tornado.web.StaticFileHandler, {"path": os.path.join(os.path.dirname(__file__),
                 "static/")}),
-                (r"/", MainHandler),
-                (r"/(.*)", ImgHandler),
+#                (r"/", MainHandler),
+                (r"/(.+)", ImgHandler),
         ], **settings)
 
         http_server = tornado.httpserver.HTTPServer(application,xheaders=True)

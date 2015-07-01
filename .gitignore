@@ -4,3 +4,4 @@
 *.Pluric*Settings*
 nohup.out
 __pycache__
+/ve/
